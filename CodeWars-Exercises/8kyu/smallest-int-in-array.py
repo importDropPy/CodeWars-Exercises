@@ -8,8 +8,8 @@ SOLVE:
 
 EXAMPLES:
 
-    Given [34, 15, 88, 2] your solution will return 2
-    Given [34, -345, -1, 100] your solution will return -345
+    Given [34, 15, 88, 2] then your solution will return 2
+    Given [34, -345, -1, 100] then your solution will return -345
     You can assume, for the purpose of this kata, that the supplied array will not be empty.
                                                                                                     
 
@@ -19,46 +19,97 @@ EXAMPLES:
 '''
 
 
+
+
+
+# There are many more solutions but this one is the one I used firstly
+# However, learning the different types of solutions is vital as you come across harder Python exercises
+
+# first define your function and put a place holder name like 'arr' to mean array but also just to input any argument when you call the function
 def find_smallest_int(arr):
-    
+
+    # assign the function min() to getmin and apply the 'arr' argument inside the min paranthesis functionality
+    # we dont have to assign min(arr) to a variable but for the sake of seeing a result in the console we want to do this
     getmin = min(arr)
+
+    # print() your getmin variable so that we can see the result in console
     print(getmin)
+
+    # always return your variable
+    # return min(arr) works just the same but we utilize the variable in this example
     return getmin
 
+# call your function here with an argument of your choosing
 find_smallest_int([23,45,1,-2,7,8])
 
 
+
+
+
+
+
+
+
+
 '''
+THESE ARE OTHER VIABLE AND WORKING SOLUTIONS FOR THIS EXERCISE
+PLEASE MAKE SURE TO CHECK FOR SPELLING OR SYNTAX ERRORS
+SO FAR I DID NOT FIND ANY MISTAKES BUT FEEL FREE TO HAVE A FIELD DAY 
+
+**ANYTHING WITH A HASHTAG BEFORE THE IT IS A ONE LINE COMMENT IN PYTHON
+ANYTHING WITH THREE ' <--IS A MULTIPLE LINE COMMENT, CLOSE MULTIPLE LINE COMMENT WITH AN ADDITIONAL THREE ' <--
 ####################################################################################################
 
 
-# sort function in this case most likely sorts the numbers from minimum to maximum
+
+# CLEVER SOLUTION
+# sort function in this case sorts the numbers from minimum to maximum
+
 
 
 def findSmallestInt(arr):
+    
     #sort array
     arr.sort()
+    
+    # assign a variable to a desired expression
+    arraySorted = arr.sort()
+    # print the variable so that you can see it
+    print(arraySorted)
+
+    # assign the answer or result to the desired expression
+    result = arr[0]
+    # print the result to see it
+    print(result)
+
+    # return the result
     return arr[0]
 
-
+# call your function with a desired argument which can be any array of integers
+findSmallestInt([23,45,1,-2,7,8])
 
 
 ####################################################################################################
 
 
-# this one operates by comparing the two integers by use of '<' less than operator
-# and then replaces the smallest number in the array 'smallest' before returning its value after 
-# it has iterated through the entire array by use of a for loop 'for i in range(0,len(arr)):
+# this one operates by comparing the two integers by use of '<' (less than operator),
+#     and, then, replaces the smallest number in the array 'smallest' before returning its value, after 
+#     it has iterated through the entire array by use of a for loop 'for i in range(0,len(arr)):
+
 
 def findSmallestInt(arr):
     smallest = []
     for i in range(0,len(arr)):
         if (arr[i] < smallest):
             smallest = arr[i]
+            # put a print() function here if you like to see every iteration's result
+    
+    # print(smallest) if you want to see what your function is doing
+    # or assign smallest to a variable with the assignment operator '=' to reduce spaghetti code
     return smallest
 
 
-
+# call your function below and give it an argument
 
 
 
@@ -66,6 +117,7 @@ def findSmallestInt(arr):
 
 
 # this script simply does the same thing with the sort function but before that checks if it is an integer with 'assert'
+
 
 def findSmallestInt(arr):
     """
@@ -83,7 +135,7 @@ def findSmallestInt(arr):
     # return smallest value
     return arr[0]
 
-
+# call your function here and put print() functions wherever you like to see what is going on inside your script
 
 
 
@@ -93,7 +145,7 @@ def findSmallestInt(arr):
 
 
 
-sudo crunch 8 12 abcdefghijklmnopqrstuvwxyz0123456789`~!@#$%^&*()_-=+[{]}\|;:'",<.>/?
+# Clever use of our original min() function but in a different way
 
 
 def findSmallestInt(arr):
@@ -103,7 +155,7 @@ def findSmallestInt(arr):
             min = item
     return min
 
-
+# call your function here
 
 
 
@@ -115,12 +167,12 @@ def findSmallestInt(arr):
 
 
 
-
+# Clever solution
 
 def find_smallest_int(arr):
     return sorted(arr)[0]
 
-
+# call your function here
 
 
 
@@ -130,26 +182,13 @@ def find_smallest_int(arr):
 
 
 # utilizing a lambda function 
-
+# and using the reduce() function
 
 def findSmallestInt(arr):
     #Code here
     return reduce(lambda x,y: x if x<y else y, arr) 
 
-
-
-
-
-
-####################################################################################################
-
-
-
-
-findSmallestInt = lambda a: sorted(a)[0]
-
-
-
+# call your function here
 
 
 
@@ -158,6 +197,22 @@ findSmallestInt = lambda a: sorted(a)[0]
 
 
 
+# Ternary lambda function utilizing sort() function
+
+
+findSmallestInt = lambda a: sorted(a)[0] and print(sorted(a)[0])
+
+
+
+# call your function here
+
+
+
+####################################################################################################
+
+
+# A proposed advanced solution to obtaining minimum numbers in a huge data payload most likely
+# this script has not been met with scrutiny so please use this script at your own damage
 
 
 class IntArr():
@@ -292,6 +347,7 @@ def find_smallest_int(a):
 
 
 
+# call your function here
 
 
 
@@ -300,15 +356,20 @@ def find_smallest_int(a):
 
 
 
-
-
+# pop() function removes an element of an array at a specified position
+# since the specified position is not said here then we rely on assigning the specific iteration of the for loop we are in to be equal to element which is equal to pop()
+# by use of less than '<' operator we can evaluate whether an integer is higher or lower
 
 def find_smallest_int(arr):
     element = arr.pop()
     for e in arr:
         if e < element:
             element = e
-    return element
+           
+    return element and print(element)
+
+# call your function here
+find_smallest_int([3,4,5,65,3,6,73])
 
 
 
@@ -321,7 +382,8 @@ def find_smallest_int(arr):
 
 
 
-
+# can import system to use the sys.maxsize functionality
+# in certain cases this may prove to be useful
 
 
 import sys
@@ -334,6 +396,7 @@ def find_smallest_int(arr):
     return my_int
 
 
+# call your function here
 
 
 
@@ -342,6 +405,8 @@ def find_smallest_int(arr):
 ####################################################################################################
 
 
+# using the less than operator to identify in a for loop the minimum by comparing every number to the last iterations number and saving it to x if it is lower than the last one
+# on the final iteration you will achieve the smallest integer and then return it
 
 
 
@@ -353,7 +418,7 @@ def find_smallest_int(arr):
     return x
 
 
-
+# call your function here
 
 
 
@@ -362,10 +427,9 @@ def find_smallest_int(arr):
 
 
 
-
-
-
-from builtins import min as find_smallest_int
+# how to import this functionality into other files with a shorter name
+# put the below line at the top of your python file to use 
+from find_smallest_int.py import YourFunctionName as YourFunctionsNameButShorter
 
 
 
