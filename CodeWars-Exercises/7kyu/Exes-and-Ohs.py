@@ -100,7 +100,7 @@ THESE ARE OTHER VIABLE AND WORKING SOLUTIONS FOR THIS EXERCISE
 PLEASE MAKE SURE TO CHECK FOR SPELLING OR SYNTAX ERRORS
 SO FAR I DID NOT FIND ANY MISTAKES BUT FEEL FREE TO HAVE A FIELD DAY 
 
-**ANYTHING WITH A HASHTAG BEFORE THE IT IS A ONE LINE COMMENT IN PYTHON
+**ANYTHING WITH A HASHTAG IN THE BEGINNING OF THE LINE IS A ONE LINE COMMENT IN PYTHON
 ANYTHING WITH THREE ' <--IS A MULTIPLE LINE COMMENT, CLOSE MULTIPLE LINE COMMENT WITH AN ADDITIONAL THREE ' <--
 ####################################################################################################
 
@@ -756,3 +756,4 @@ xo('xylophone')
 ####################################################################################################
 
                                                                                                     '''
+
