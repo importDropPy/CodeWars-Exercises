@@ -267,7 +267,7 @@ def findSmallestInt(arr):
 
 
 
-# Ternary lambda function utilizing sort() function
+# Lambda function utilizing sort() function and the '[0]' index to return the first element in the array
 
 
 findSmallestInt = lambda a: sorted(a)[0] and print(sorted(a)[0])
@@ -562,5 +562,6 @@ from find_smallest_int.py import YourFunctionName as YourFunctionsNameButShorter
 ####################################################################################################
 ####################################################################################################
                                                                                                     '''
+
 
 
