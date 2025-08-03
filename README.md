@@ -15,4 +15,4 @@ Python CodeWars Exercises for the Modern Python Engineer
 
 
 
-# To see results printed, then please use the 'print(Your-Expression-Or-Argument-to-be-solved)' in your code!
+# To see results printed, then please use the 'print()' function in your code!
