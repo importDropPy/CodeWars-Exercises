@@ -184,7 +184,8 @@ def xo(s):
     return exes == ohs
 
 
-
+# Call your function here
+xo('xylophone')
 
 
 ####################################################################################################
@@ -208,6 +209,8 @@ def xo(s):
     # This line will return a Boolean value that is either True or False depending on the argument called in the function call
     return d.get('x', 0) == d.get('o', 0)
 
+
+
 # Call your function here
 xo('xylophone')
 
@@ -225,8 +228,8 @@ xo('xylophone')
 def xo(s):
     return True if s.lower().count('x') == s.lower().count('o') else False
     
-    
-    
+# Call your function here
+xo('xylophone')
 
 
 
@@ -242,7 +245,8 @@ def xo(s):
     return s.lower().count("x") is s.lower().count("o")
 
 
-
+# Call your function here
+xo('xylophone')
 
 
 ####################################################################################################
@@ -275,7 +279,8 @@ def xo(test):
     return eval_results(result)
 
 
-
+# Call your function here
+xo('xylophone')
 
 
 
@@ -334,6 +339,8 @@ def xo(s):
     return count == 0
 
 
+
+# Call your function here
 xo('xylophone')
 
 
@@ -423,7 +430,8 @@ def xo(s):
     c = __import__('collections').Counter(s.lower())
     return c['x'] == c['o']
 
-
+# Call your function here
+xo('xylophone')
 
 
 ####################################################################################################
@@ -746,4 +754,5 @@ xo('xylophone')
 ####################################################################################################
 ####################################################################################################
 ####################################################################################################
+
                                                                                                     '''
